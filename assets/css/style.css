@@ -94,6 +94,7 @@
 
 /* template */
 body{
+    scroll-behavior: smooth;
     font-family: var(--sowi-font-family-champagne-limousines);
 }
 
@@ -117,6 +118,9 @@ body{
     height: 540px;
 }
 
+.max-width-4{
+    max-width: 4rem;
+}
 .max-width-12{
     max-width: 12rem;
 }
