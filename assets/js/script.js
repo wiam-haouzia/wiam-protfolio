@@ -40,7 +40,7 @@ $(function () {
                 animationType: 'quicksand',
                 gridAdjustment: 'responsive',
                 caption: 'overlayBottom',
-                displayType: 'sequentially',
+                displayType: 'default',
                 displayTypeSpeed: 80,
                 lightboxDelegate: '.cbp-lightbox',
                 lightboxGallery: true,
