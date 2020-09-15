@@ -372,7 +372,10 @@ button.mfp-close{
     margin: auto;
     background: var(--sowi-color-1d1d1d);
 }
-
+.-title span{
+    font-family: var(--sowi-font-family-segoe-ui);
+    font-size:var(--sowi-font-size-24);
+}
 /*
     cubeportfolio
 */
@@ -451,7 +454,7 @@ button.mfp-close{
 }
 .contact-index .fy-input{
     border-radius: 8px;
-    background: var(--secand-color);
+    background:  var(--sowi-color-1d1d1d);
     -webkit-box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.4);
             box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.4);
 }
@@ -485,6 +488,9 @@ button.mfp-close{
 }
 .contact-index .contact-logo{
     transform: translateY(-50%);
+}
+.contact-info{
+    font-family: var(--sowi-font-family-segoe-ui);
 }
 
 @media screen and (max-width: 768px){
@@ -529,7 +535,7 @@ button.mfp-close{
     -webkit-transition: all ease 0.2s;
     -o-transition: all ease 0.2s;
     transition: all ease 0.2s;
-    background: var(--secand-color);
+    /* background: var(--sowi-color-151515); */
     padding: 0 4px;
 }
 
