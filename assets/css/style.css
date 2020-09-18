@@ -190,7 +190,7 @@ button.mfp-close{
 /* componants */
 .btn-siwo{
     background: var(--sowi-color-f73576);
-    color: var(--sowi-color-ffffff);
+    color: var(--sowi-color-ffffff) !important;
     font-family: var(--sowi-font-family-segoe-ui);
     border-radius: 3px;
     font-size: 14px;
@@ -346,7 +346,7 @@ button.mfp-close{
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: 2px;
-    line-height: 1;
+    line-height: 1.5;
     margin-bottom: 0;
 }
 .timeline-block .timeline-body .timeline-item .-date{

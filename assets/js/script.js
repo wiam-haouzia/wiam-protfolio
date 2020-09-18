@@ -10,6 +10,13 @@ window.onload = function() {
 }
 
 $(function () { 
+    $("#projectsBtn").click(function() {
+        var offset = 20; //Offset of 20px
+    
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top + offset
+        }, 2000);
+    });
 
     var app = {
         popup: function () { 

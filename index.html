@@ -56,6 +56,7 @@
                         <li class="nav-item d-md-inline d-none">
                             <a class="nav-link px-2" href="#"> <i class="fas fa-envelope"></i> </a>
                         </li>
+                        
                         <li class="nav-item d-md-inline d-flex justify-content-center" >
                             <a class="nav-link d-md-none d-inline px-2" href="#"> <i class="fab fa-linkedin-in"></i> </a>
                             <a class="nav-link d-md-none d-inline px-2" href="#"> <i class="fab fa-dribbble"></i> </a>
@@ -85,7 +86,7 @@
                             <p data-lkey="caption_body">Hi There, <br> I'm <strong class="bold-text">WIAM HAOUZIA</strong> a Moroccan UI/UX designer and Front-End Developer, Check my projects and I will be glad to make your ideas look beautiful</p>
                         </div>
                         <div class="caption-footer lax" data-lax-preset="fadeOut">
-                            <a class="btn btn-siwo d-flex align-items-center justify-content-center flex-column" href="javascript:void()">
+                            <a class="btn btn-siwo d-flex align-items-center justify-content-center flex-column" id="projectsBtn">
                                 <span data-lkey="caption_btn">My Projects</span>
                                 <span class="d-block btn-hidden-icon"> <i class="fas fa-chevron-down"></i></span>
                             </a>
@@ -273,16 +274,16 @@
                 </div>
                 <div class="row pb-5" id="filters-container">
                     <div class="col-md">
-                        <div data-filter="*" class="cbp-filter-item cbp-filter-item-active"> <span></span> <div data-lkey="filter_all">All</div> </div>
+                        <div data-filter="*" class="cbp-filter-item cbp-filter-item-active "> <span></span> <div class="d-inline-block" data-lkey="filter_all">All</div> </div>
                     </div>
                     <div class="col-md">
-                        <div data-filter=".ui-ux-design" class="cbp-filter-item"><span></span> <div data-lkey="filter_uiux_design"> I/UX Design</div> </div>
+                        <div data-filter=".ui-ux-design" class="cbp-filter-item "><span></span> <div class="d-inline-block" data-lkey="filter_uiux_design">UI/UX Design</div> </div>
                     </div>
                     <div class="col-md">
-                        <div data-filter=".graphic-design" class="cbp-filter-item"><span></span> <div data-lkey="filter_graphic_design"> Graphic Design</div> </div>
+                        <div data-filter=".graphic-design" class="cbp-filter-item "><span></span> <div class="d-inline-block" data-lkey="filter_graphic_design"> Graphic Design</div> </div>
                     </div>
                     <div class="col-md">
-                        <div data-filter=".web-development" class="cbp-filter-item"><span></span> <div data-lkey="filter_web_development"> Web Development</div> </div>
+                        <div data-filter=".web-development" class="cbp-filter-item "><span></span> <div class="d-inline-block" data-lkey="filter_web_development"> Web Development</div> </div>
                     </div>
                 </div>
                 <div class="w-100 grid-container">
@@ -491,17 +492,17 @@
         
                             <div class="float-label px-1 mb-3">
                                 <input type="email" id="email" name="email" value="" class="fy-input empty" required="">
-                                <label for="email" data-lkey="contact_nom">Email <small>*</small></label>
+                                <label for="email" data-lkey="contact_email">Email <small>*</small></label>
                             </div>
         
                             <div class="float-label px-1 mb-3">
                                 <input type="text" id="sujet" class="fy-input empty" name="sujet" value="" required="">
-                                <label for="sujet" data-lkey="contact_nom">Sujet <small>*</small></label>
+                                <label for="sujet" data-lkey="contact_sujet">Sujet <small>*</small></label>
                             </div>
         
                             <div class="float-label px-1 mb-3">
                                 <textarea class="fy-input empty" name="message" id="message" cols="30" rows="4"></textarea>
-                                <label for="sujet" data-lkey="contact_nom">Message <small>*</small></label>
+                                <label for="sujet" data-lkey="contact_message">Message <small>*</small></label>
                                 <div class="fy-send">
                                     <button class="fy-submit" type="submit">
                                         <svg class="svg-inline--fa fa-paper-plane fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg><!-- <i class="fas fa-paper-plane"></i> -->
@@ -516,7 +517,7 @@
                     <div class="col-md-6 order-3 row px-md-0 contact-info">
                         <div class="col-md-6 col-12">
                             <nav class="nav flex-column">
-                                <li class="nav-item"> <a class="nav-link text-reset d-inline-block" href="tel:00212654826260"><i style="width: 15px" class="fas mr-2 fa-phone"></i> +212 654 826 060</a> </li>
+                                <li class="nav-item"> <a class="nav-link text-reset d-inline-block" href="tel:00212654826260"><i style="width: 15px" class="fas mr-2 fa-phone-alt"></i> +212 654 826 060</a> </li>
                                 <li class="nav-item"> <a class="nav-link text-reset d-inline-block"> <i style="width: 15px" class="fas mr-2 fa-map-marker-alt"></i> Casablanca, Morocco</a> </li>
                             </nav>
                         </div>
