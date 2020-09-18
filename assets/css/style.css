@@ -223,6 +223,10 @@ button.mfp-close{
 /* --------------
     navbar
 -------------- */
+.main-header{
+    height: 68px;
+}
+
 .navbar-dark .navbar-nav .nav-link{
     font: var(--sowi-font-style-normal) normal var(--sowi-font-weight-bold) 31px/var(--sowi-line-spacing-36) var(--sowi-font-family-champagne-limousines);
     color: var(--sowi-color-ffffff);

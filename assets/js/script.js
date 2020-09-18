@@ -10,32 +10,45 @@ window.onload = function() {
 }
 
 $(function () { 
-    $("#projectsBtn").click(function() {
-        var offset = 20; //Offset of 20px
-    
-        $('html, body').animate({
-            scrollTop: $("#projects").offset().top + offset
-        }, 2000);
-    });
 
     var app = {
+        gotosection: function(){
+            $("a[href]").click(function(e) {
+                var offset = 50; //Offset of 20px
+                let eid = $(this).attr('href');
+                if ( $(eid).length ) {
+                    $('html, body').animate({
+                        scrollTop: $(eid).offset().top - offset
+                    }, 1000);
+                }
+            });
+        },
         popup: function () { 
             var e = $('[data-popup="gallery"]');
-            e.magnificPopup({
-                delegate: '[data-popup="gallery-item"]',
-                type: 'image',
-                closeOnContentClick: false,
-                closeBtnInside: false,
-                mainClass: 'mfp-with-zoom mfp-img-mobile',
-                gallery: {
-                    enabled: true
-                },
-                zoom: {
-                    enabled: true,
-                    duration: 300, // don't foget to change the duration also in CSS
-                    opener: function(element) {
-                        return element.find('img');
+            
+            e.each(function() {
+                $(this).magnificPopup({
+                    delegate: '[data-popup="gallery-item"]',
+                    type: 'image',
+                    closeOnContentClick: false,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    gallery: {
+                        enabled: true
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300, // don't foget to change the duration also in CSS
+                        opener: function(element) {
+                            return element.find('img');
+                        }
                     }
+                });
+
+                if ($(this).data('popup-first')) {
+                    var gall_items = $(this).find('[data-popup="gallery-item"]');
+                    gall_items.css('display','none');
+                    gall_items.get(0).style.display = 'inline';
                 }
             });
         },
@@ -44,14 +57,10 @@ $(function () {
             var e = $('.grid-container');
             e.cubeportfolio({
                 filters: '#filters-container',
-                animationType: 'quicksand',
+                animationType: 'slideDelay',
                 gridAdjustment: 'responsive',
                 caption: 'overlayBottom',
-                displayType: 'default',
-                displayTypeSpeed: 80,
-                lightboxDelegate: '.cbp-lightbox',
-                lightboxGallery: true,
-                lightboxTitleSrc: 'data-title',
+                displayType: 'fadeInToTop',
                 gapHorizontal: 35,
                 gapVertical: 30,
                 mediaQueries: [{
@@ -92,8 +101,9 @@ $(function () {
             this.popup();
             this.cube_protfolio();
             this.changeValue();
+            this.gotosection();
         }
-    }
+    };
 
 
     return app.init();

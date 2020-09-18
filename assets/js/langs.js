@@ -88,7 +88,6 @@ var multilang = {
     setLang: function($local){
         localStorage.setItem('lang', this.data[$local] ? $local : this.currentLocal );
         this.currentLocal = $local;
-        console.log($local);
         multilang = this;
     },
     getValue:function($key){
@@ -128,8 +127,7 @@ var multilang = {
             var selected_local = $(elem).attr('data-local');
             if ( selected_local != multilang.currentLocal){
                 $(elem).removeClass('active');
-            } else{ $(elem).addClass('active'); } 
-            console.log(elem);
+            } else{ $(elem).addClass('active'); }
         });
 
         this.events();
