@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/lib/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/lib/magnific-popup.min.css">
     <link rel="stylesheet" href="./assets/css/lib/cubeportfolio.min.css">
+    <link rel="stylesheet" href="./assets/js/lib/lightgallery/css/lightgallery.min.css">
+    <link rel="stylesheet" href="./assets/js/lib/lightgallery/css/lg-transitions.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     
     <link rel="shortcut icon" href="./assets/img/Logo_1.png" type="image/png">
@@ -94,7 +96,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img class="img-fluid max-width-24 lax"  data-lax-preset="leftToRight-.1 " src="./assets/img/ma-photo@2x.png" alt="wiam haouzia">
+                    <a href="./assets/img/ma-photo@2x.png">
+                        <img class="img-fluid max-width-24 lax"  data-lax-preset="leftToRight-.1 " src="./assets/img/ma-photo@2x.png" alt="wiam haouzia">
+                    </a>
                 </div>
             </div>
         </div>
@@ -166,7 +170,7 @@
                 </div>
                 <div class="row justify-content-center" data-popup="gallery">
                     <div class="col-md-3 px-md-4 px-3 mb-5 lax" data-lax-preset="zoomInOut fadeInOut">
-                        <a href="assets/img/certifications/Openclassrooms-Maquette-mobile-Xd@2x.png"  data-popup="gallery-item">
+                        <a href="assets/img/certifications/Openclassrooms-Maquette-mobile-Xd@2x.png">
                             <img class="img-fluid mx-md-2" src="./assets/img/certifications/Openclassrooms-Maquette-mobile-Xd.png" alt="Openclassrooms-Maquette-mobile-Xd">
                         </a>
                     </div>
@@ -424,13 +428,14 @@
                     </div>
                     <div class="cbp-item ui-ux-design">
                         <div class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap" data-popup="gallery">
-                                <a data-popup="gallery-item" data-title="Ciné-Scène International" href="./assets/img/projects/CSI-MockUp@2x.png">
-                                    <img src="./assets/img/projects/CSI-MockUp.png" alt="CSI-MockUp">
-                                </a>
-                                <a data-popup="gallery-item" data-title="Ciné-Scène International" href="./assets/img/projects/NameWorkoutDribble.png"></a>
-                                <a data-popup="gallery-item" data-title="Ciné-Scène International" href="./assets/img/projects/La-marocaine-des-jeux.png"> </a>
-                                <a data-popup="gallery-item" data-title="Ciné-Scène International" href="./assets/img/projects/Liomet.png"> </a>
+                            <div class="cbp-caption-defaultWrap gallery">
+                                <div data-src="./assets/img/projects/CSI-MockUp@2x.png">
+                                    <a href="">
+                                        <img src="./assets/img/projects/CSI-MockUp.png" alt="CSI-MockUp">
+                                    </a>
+                                </div>
+                                <div data-src="./assets/img/projects/La-marocaine-des-jeux.png" title="La marocaine des jeux"></div>
+                                <div data-src="./assets/img/projects/Liomet.png" title="Liomet"></div>
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignLeft">
@@ -447,10 +452,14 @@
 
                     <div class="cbp-item graphic-design">
                         <div class="cbp-caption">
-                            <div class="cbp-caption-defaultWrap" data-popup="gallery">
-                                <a data-popup="gallery-item" data-title="Affiche la belle et la bete" href="./assets/img/projects/affiche-la-belle-et-la-bete@2x.png">
-                                    <img src="./assets/img/projects/affiche-la-belle-et-la-bete.png" alt="affiche-la-belle-et-la-bete">
-                                </a>
+                            <div class="cbp-caption-defaultWrap gallery">                                
+                                <div data-src="./assets/img/projects/affiche-la-belle-et-la-bete.png">
+                                    <a href="">
+                                        <img src="./assets/img/projects/affiche-la-belle-et-la-bete.png" alt="affiche-la-belle-et-la-bete">
+                                    </a>
+                                </div>
+                                <div data-src="./assets/img/projects/NameWorkoutDribble.png" title="NameWorkoutDribble -1"></div>
+                                <div data-src="./assets/img/projects/NameWorkoutDribble.png" title="NameWorkoutDribble -2"></div>
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignLeft">
@@ -648,6 +657,26 @@
     <script src="./assets/js/lib/jquery.cubeportfolio.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <script src="./assets/js/langs.js"></script>
+    <script src="./assets/js/lib/jquery.mousewheel.min.js"></script>
+    <script src="./assets/js/lib/lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="./assets/js/lib/jquery-migrate-3.3.1.min.js"></script>
+
     <script src="./assets/js/script.js"></script>
+    
+    <script>
+        $(document).ready(() => {
+            $(".gallery").lightGallery({
+                mode: 'lg-zoom-out-in',
+                download: false,
+                thumbnail: false,
+                rotate: false,
+                share: false,
+                autoplay: false,
+                autoplayControls: false
+            });
+        });
+    </script>
+
+
 </body>
 </html>
