@@ -10,7 +10,7 @@ var multilang = {
             "contact": "Contact",
             "caption_title": "UI/UX Designer",
             "caption_subtitle": "& Développeuse front-end",
-            "caption_body": "Salut, <br> Je suis <strong class=\"bold-text\">WIAM HAOUZIA</strong> UI/UX designer et Développeuse front-end Marocaine, Veuillez vérifiez mes projets et je serai heureuse de rendre vos idées plus belles",
+            "caption_body": "Salut, <br> Je suis <strong class=\"bold-text\">WIAM HAOUZIA</strong> UI/UX designer et Développeuse front-end Marocaine, Veuillez vérifier mes projets et je serai heureuse de rendre vos idées plus belles",
             "caption_btn": "Mes Projets",
             't_professional_experience': "Éxpériences professionnelles",
             "pro_exp_1_title": "UI/UX Designer <i class=\"fas fa-map-marker-alt\"></i> Softseventart",
