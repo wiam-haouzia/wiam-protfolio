@@ -269,7 +269,19 @@ button.mfp-close{
     color: var(--sowi-color-ffffff);
     font-family: var(--sowi-font-family-segoe-ui);
 }
-
+@media (max-width: 758px){
+	.banner-home .height-540{
+		height: auto;
+	}
+	.navbar-toggler {
+		border: none;
+	}
+	.navbar-toggler:action,
+	.navbar-toggler:focus{
+		outline: none;
+		border: none;
+	}
+}
 /*
     timeline-block
 */
